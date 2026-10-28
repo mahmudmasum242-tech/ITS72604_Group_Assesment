@@ -38,10 +38,11 @@ def apply_theme() -> None:
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
         html, body, [class*="st-"] { font-family: "Figtree", sans-serif !important; }
+        html, body, .stApp, [data-testid="stAppViewContainer"] { font-family: "Figtree", sans-serif; }
+        h1, h2, h3, h4, h5, h6, p, label, button, input, textarea, select,
+        [data-testid="stMarkdownContainer"], [data-testid="stMetricLabel"],
+        [data-testid="stMetricValue"] { font-family: "Figtree", sans-serif; }
         .eyebrow { color:#326080; font-weight:700; font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; margin-bottom:.3rem; }
-        .subhead { color:#617382; margin-top:-.7rem; margin-bottom:1.4rem; }
-        [data-testid="stSidebarNav"] a[aria-current="page"] { background:#005BB3 !important; color:#fff !important; border-radius:10px; }
-        [data-testid="stSidebarNav"] a[aria-current="page"] span { color:#fff !important; }
         [data-testid="stMetric"] { background:#fffaf6; border:1px solid #ead8cb; border-radius:16px; padding:17px 20px; box-shadow:0 5px 20px #102d3608; }
         [data-testid="stMetricLabel"] { color:#617382; font-weight:600; }
         [data-testid="stDataFrame"] { border:1px solid #ead8cb; border-radius:12px; overflow:hidden; }
